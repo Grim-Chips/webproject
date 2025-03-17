@@ -56,7 +56,7 @@ function Footer()
     footer .footer-links a,
     footer .social-links a {
         color: #fff;
-        /* Ensure links are white by default */
+
         text-decoration: none;
     }
 
