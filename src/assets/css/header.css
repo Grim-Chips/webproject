@@ -1,32 +1,53 @@
+/* Base body styling */
 body {
     font-family: Arial, sans-serif;
+    /* Sans-serif font for better readability */
     margin: 0;
+    /* Remove default body margin */
     padding: 0;
+    /* Remove default body padding */
     background-color: #f4f4f4;
+    /* Light gray background */
 }
 
+/* Navigation bar styling */
 nav {
     text-align: center;
+    /* Center-align navigation items */
     margin: 20px 0;
+    /* Add vertical spacing */
 }
 
+/* Link styling */
 a {
     text-decoration: none;
+    /* Remove default underline */
     color: #333;
+    /* Dark gray text color */
     padding: 10px 15px;
+    /* Add padding for larger click area */
     display: inline-block;
+    /* Allow padding to take effect */
 }
 
+/* Hover state styling */
 a:hover {
     background-color: #ddd;
+    /* Light gray background on hover */
     color: #000;
+    /* Darker text on hover */
 }
 
+/* Active state styling (when clicked) */
 a:active {
     background-color: #bbb;
+    /* Darker gray background when clicked */
     color: #000;
+    /* Maintain dark text */
 }
 
+/* Add separator between adjacent links */
 a+a {
     border-left: 1px solid #ccc;
+    /* Subtle vertical divider between links */
 }
