@@ -2,13 +2,12 @@
 function Navigation()
 {
     echo '
+        <link rel="stylesheet" href="/project/assets/css/header.css">
         <nav>
             <a href="about.php">About</a> 
             <a href="learn_more.php">Learn More</a> 
             <a href="t3.php">t3</a> 
             <a href="t4.php">t4</a>
-            <link rel="stylesheet" href="/project/assets/css/footer.css">
-
         </nav>';
 }
 ?>

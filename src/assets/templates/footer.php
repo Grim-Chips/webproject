@@ -1,7 +1,10 @@
 <?php
 function Footer()
 {
-    echo '<footer role="contentinfo">
+    echo '
+    
+    <link rel="stylesheet" href="../src/assets/css/footer.css">
+    <footer role="contentinfo">
     <div class="container">
     <p>&copy; ' . date('Y') . ' Your Company. All rights reserved.</p>
     <ul class="footer-links">
@@ -21,7 +24,7 @@ function Footer()
 }
 ?>
 
-<style>
+<!-- <style>
     footer {
         background-color: #333;
         color: #fff;
@@ -64,4 +67,4 @@ function Footer()
     footer .social-links a:hover {
         text-decoration: underline;
     }
-</style>
+</style> -->
