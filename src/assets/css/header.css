@@ -1,5 +1,10 @@
 /* Base body styling */
 body {
+    min-height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: Arial, sans-serif;
     /* Sans-serif font for better readability */
     margin: 0;
