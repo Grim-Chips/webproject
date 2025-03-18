@@ -9,14 +9,8 @@
 </head>
 
 <body>
-
-
-
-
     <?php
     include_once __DIR__ . "/assets/templates/header.php";
-    include_once __DIR__ . "/assets/templates/footer.php";
-
     // if (function_exists('Navigation')) {
     //     Navigation();
     // } else {
@@ -28,18 +22,12 @@
     // } else {
     //     echo "<p>Error: Footer function not found.</p>";
     // }
-    
-
     Navigation();
-
-
-
-
-
     ?>
 </body>
 <h1>Welcome to the Home Page</h1>
 <?php
+include_once __DIR__ . "/assets/templates/footer.php";
 Footer();
 ?>
 
