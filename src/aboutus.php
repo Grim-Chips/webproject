@@ -9,17 +9,9 @@
 </head>
 
 <body>
-    <header>
-        <h1>About Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#history">Our History</a></li>
-                <li><a href="#values">Our Values</a></li>
-                <li><a href="#team">Our Team</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include_once __DIR__ . "/assets/templates/header.php";
+    Navigation();
+    ?>
 
     <section id="history">
         <h2>Our History</h2>
@@ -39,9 +31,10 @@
             tirelessly to support communities in distress.</p>
     </section>
 
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> Egyptian Red Crescent. All rights reserved.</p>
-    </footer>
+    <?php
+    include_once __DIR__ . "/assets/templates/footer.php";
+    Footer();
+    ?>
 </body>
 
 </html>
