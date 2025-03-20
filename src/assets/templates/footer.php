@@ -15,9 +15,9 @@ function Footer()
     <li><a href="/sitemap">Sitemap</a></li>
     </ul>
     <ul class="social-links">
-    <li><a href="https://facebook.com/yourcompany" aria-label="Facebook">Facebook</a></li>
-    <li><a href="https://twitter.com/yourcompany" aria-label="Twitter">Twitter</a></li>
-    <li><a href="https://linkedin.com/company/yourcompany" aria-label="LinkedIn">LinkedIn</a></li>
+    <li><a href="https://facebook.com" aria-label="Facebook">Facebook</a></li>
+    <li><a href="https://twitter.com" aria-label="Twitter">Twitter</a></li>
+    <li><a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn</a></li>
     </ul>
     </div>
     </footer>';

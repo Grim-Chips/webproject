@@ -6,8 +6,8 @@ function Navigation()
         <nav>
             <a href="about.php">About</a> 
             <a href="learn_more.php">Learn More</a> 
-            <a href="t3.php">t3</a> 
-            <a href="t4.php">t4</a>
+            <a href="trainingcourses.php">training courses</a> 
+            <a href="projects_programs.php">projects/programs</a>
         </nav>';
 }
 ?>
