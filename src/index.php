@@ -24,12 +24,14 @@
                 <h2>Our Vision</h2>
                 <p>Our vision is to create a world where everyone has access to
                     the resources and support they need to live a healthy and fulfilling life.</p>
+                <img src="assets/images/0_about-us_2ed5f5f5.jpg" alt="vision" style="width: 300px; height: auto;">
             </td>
         </tr>
         <tr>
             <td>
                 <h2>Our Values</h2>
                 <ul>
+
                     <li>Compassion</li>
                     <li>Integrity</li>
                     <li>Respect</li>
