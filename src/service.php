@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Egyptian Red Crescent</title>
+    <title>Emergency Response Details - Egyptian Red Crescent</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,21 +14,22 @@
     Navigation();
     ?>
 
-    <section id="emergency">
-        <h2>Emergency Response</h2>
-        <p>We provide immediate disaster relief and emergency assistance to communities affected by crises.</p>
-    </section>
-
-    <section id="medical">
-        <h2>Medical Assistance</h2>
-        <p>Our medical teams offer first aid, health services, and support to vulnerable populations.</p>
-    </section>
-
-    <section id="training">
-        <h2>Training Programs</h2>
-        <p>We conduct first aid and disaster response training programs to equip individuals with life-saving skills.
+    <main>
+        <h1>Emergency Response</h1>
+        <p>
+            The Egyptian Red Crescent provides immediate disaster relief and emergency assistance to communities affected by crises. 
+            Our teams are trained to respond quickly to natural disasters, conflicts, and other emergencies, ensuring that affected 
+            populations receive the support they need.
         </p>
-    </section>
+        <h2>Our Services Include:</h2>
+        <ul>
+            <li>Disaster relief operations</li>
+            <li>Emergency shelter and food distribution</li>
+            <li>Search and rescue operations</li>
+            <li>Psychological support for affected individuals</li>
+        </ul>
+        <a href="services.php">Back to Services</a>
+    </main>
 
     <?php
     include_once __DIR__ . "/assets/templates/footer.php";
