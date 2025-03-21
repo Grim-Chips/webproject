@@ -1,14 +1,14 @@
 /* Base body styling */
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 
-    height: 100dvh;
+    /* height: 100dvh; */
     /* temp Ensure full viewport height */
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column;
     /*temp*/
-    justify-content: space-between;
-    /*temp*/
+    /* justify-content: space-between; */
+
     font-family: Arial, sans-serif;
     /* Sans-serif font for better readability */
     margin: 0;
