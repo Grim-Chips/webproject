@@ -4,6 +4,8 @@ function Navigation()
     echo '
         <link rel="stylesheet" href="../src/assets/css/header.css?ver=1.0">
         <nav>
+            <a href="index.php">Home</a>
+            <a href="volunteer.php">Volunteer</a>
             <a href="about.php">About</a> 
             <a href="learn_more.php">Learn More</a> 
             <a href="trainingcourses.php">training courses</a> 
