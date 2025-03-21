@@ -8,20 +8,31 @@ $projects = [
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects & Programs</title>
 </head>
+
 <body>
+    <?php
+    include_once __DIR__ . "/assets/templates/header.php";
+    Navigation();
+    ?>
     <h2>Ongoing Projects & Programs</h2>
     <ul>
-        <?php foreach ($projects as $project) : ?>
+        <?php foreach ($projects as $project): ?>
             <li>
                 <h3><?php echo $project['title']; ?></h3>
                 <p><?php echo $project['description']; ?></p>
             </li>
         <?php endforeach; ?>
     </ul>
+    <?php
+    include_once __DIR__ . "/assets/templates/footer.php";
+    Footer();
+    ?>
 </body>
+
 </html>
