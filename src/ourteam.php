@@ -32,12 +32,18 @@
             <td>Omar Khaled</td>
             <td>Head of Volunteer Services</td>
         </tr>
-        <tr style="text-align: center;">Our Volunteers</tr>
-        <tr>
+
+        <tr style="text-align: center;">
+            <td>Our Volunteers</td>
             <td colspan="2" style="text-align: center">Thousands of volunteers across Egypt contribute to our mission,
                 providing medical aid, disaster
                 relief,<br>
                 and community support.</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <img src="assets/images/1202518215814679.jpg" alt="Volunteers">
+            </td>
         </tr>
     </table>
 
