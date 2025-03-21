@@ -31,7 +31,7 @@
             <td>
                 <h2>Our Values</h2>
                 <ul>
-
+                    <img src="assets/images/Blog-20-image.jpg" alt="values" style="width: 300px; height: auto;">
                     <li>Compassion</li>
                     <li>Integrity</li>
                     <li>Respect</li>
