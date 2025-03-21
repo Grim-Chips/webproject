@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="POST">
         <div style="margin-bottom: 10px;">
             <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" value="<?= isset($name) ? $name : '' ?>" required placeholder="Enter your full name" style="width: 100%; padding: 8px; border: 1px solid #000;">
+            <input type="text" id="name" name="name" value="<?= isset($name) ? $name : '' ?>" required placeholder="Enter your name" style="width: 100%; padding: 8px; border: 1px solid #000;">
         </div>
 
         <div style="margin-bottom: 10px;">
