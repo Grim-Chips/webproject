@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team - Egyptian Red Crescent</title>
-
+    <link rel="stylesheet" href="assets/css/ourteam.css">
 </head>
 
 <body>
-    <!-- <link rel="stylesheet" href="/webproject/src/assets/css/ourteam.css"> -->
+
     <?php
     include_once __DIR__ . "/assets/templates/header.php";
     Navigation();
@@ -52,39 +52,5 @@
     Footer();
     ?>
 </body>
-<style>
-    #ourteam {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #ourteam th,
-    #ourteam td {
-        padding: 10px;
-        text-align: center;
-        border: 1px solid #ddd;
-    }
-
-    #ourteam th {
-        background-color: #f4f4f4;
-        font-weight: bold;
-    }
-
-    #ourteam tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-
-    #ourteam tr:hover {
-        background-color: #f1f1f1;
-    }
-
-    #ourteam {
-        border-collapse: collapse;
-        width: 80%;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        color: #333;
-    }
-</style>
 
 </html>
