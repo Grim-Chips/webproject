@@ -48,12 +48,20 @@ if (file_exists($presidentFile)) {
 </head>
 
 <body>
+    <?php
+    include_once __DIR__ . "/assets/templates/header.php";
+    Navigation();
+    ?>
     <div class="container">
         <h1><?php echo htmlspecialchars($president['name']); ?></h1>
         <p><strong>Term:</strong> <?php echo htmlspecialchars($president['term']); ?></p>
         <p><strong>Country:</strong> <?php echo htmlspecialchars($president['country']); ?></p>
         <p><?php echo htmlspecialchars($president['bio']); ?></p>
     </div>
+    <?php
+    include_once __DIR__ . "/assets/templates/footer.php";
+    Footer();
+    ?>
 </body>
 
 </html>

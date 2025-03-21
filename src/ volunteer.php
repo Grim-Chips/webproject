@@ -9,17 +9,10 @@
 </head>
 
 <body>
-    <header>
-        <h1>Volunteer with Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">About Us</a></li>
-                <li><a href="ourteam.php">Our Team</a></li>
-                <li><a href="service.php">Services</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?
+    include_once __DIR__ . "/assets/templates/header.php";
+    Navigation();
+    ?>
 
     <section id="volunteer">
         <h2>Become a Volunteer</h2>
