@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <?php
     include_once __DIR__ . "/assets/templates/header.php";
     Navigation();
