@@ -38,7 +38,6 @@
     <?php
     include_once __DIR__ . "/assets/templates/footer.php";
     Footer();
-
     ?>
 </body>
 
