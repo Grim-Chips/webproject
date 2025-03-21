@@ -29,7 +29,7 @@
             <h2>Our Team</h2>
             <p>Our organization consists of dedicated volunteers, medical professionals, and relief workers who work
                 tirelessly to support communities in distress.</p>
-        </td>`
+        </td>
 
 
 
