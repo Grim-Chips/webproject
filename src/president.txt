@@ -1,0 +1,4 @@
+name=John Doe
+term=2020 - 2024
+country=Exampleland
+bio=John Doe is the current president of Exampleland. He has been serving since 2020 and is known for his dedication to economic growth and social reforms.
