@@ -12,6 +12,7 @@
     <?
     include_once __DIR__ . "/assets/templates/header.php";
     Navigation();
+
     ?>
 
     <section id="volunteer">
@@ -28,9 +29,10 @@
             soon.</p>
     </section>
 
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> Egyptian Red Crescent. All rights reserved.</p>
-    </footer>
+    <?
+    include_once __DIR__ . "/assets/templates/footer.php";
+    Footer();
+    ?>
 </body>
 
 </html>
