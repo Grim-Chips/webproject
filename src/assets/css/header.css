@@ -1,5 +1,6 @@
 /* Base body styling */
 body {
+
     /* min-height: 100vh; */
 
     /* height: 100dvh; */
@@ -7,8 +8,6 @@ body {
     /* display: flex; */
     /* flex-direction: column;
     /*temp*/
-    /* justify-content: space-between; */
-
     font-family: Arial, sans-serif;
     /* Sans-serif font for better readability */
     margin: 0;

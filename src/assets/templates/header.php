@@ -2,7 +2,7 @@
 function Navigation()
 {
     echo '
-        <link rel="stylesheet" href="../src/assets/css/header.css">
+        <link rel="stylesheet" href="../src/assets/css/header.css?ver=1.0">
         <nav>
             <a href="about.php">About</a> 
             <a href="learn_more.php">Learn More</a> 

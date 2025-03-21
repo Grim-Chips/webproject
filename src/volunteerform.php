@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ .
+require_once ;
 
 if (getRequestMethod() == "POST") {
     $name = getGetParam('name');
