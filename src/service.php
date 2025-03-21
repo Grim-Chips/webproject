@@ -9,18 +9,10 @@
 </head>
 
 <body>
-    <header>
-        <h1>Our Services</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">About Us</a></li>
-                <li><a href="#emergency">Emergency Response</a></li>
-                <li><a href="#medical">Medical Assistance</a></li>
-                <li><a href="#training">Training Programs</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+    include_once __DIR__ . "/assets/templates/header.php";
+    Navigation();
+    ?>
 
     <section id="emergency">
         <h2>Emergency Response</h2>
@@ -38,9 +30,10 @@
         </p>
     </section>
 
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> Egyptian Red Crescent. All rights reserved.</p>
-    </footer>
+    <?php
+    include_once __DIR__ . "/assets/templates/footer.php";
+    Footer();
+    ?>
 </body>
 
 </html>
