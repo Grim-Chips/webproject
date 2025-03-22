@@ -38,6 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p class="success-message"><?= $success_message ?></p>
         <?php endif; ?>
 
+<<<<<<< HEAD
+    
+
+=======
         <form method="POST">
             <div class="form-group">
                 <label for="name">Full Name:</label>
@@ -63,3 +67,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
+>>>>>>> c768082c1d24d5a18982bef17fac1b97aa67d2ba

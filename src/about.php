@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +28,9 @@
             <h2>Our Team</h2>
             <p>Our organization consists of dedicated volunteers, medical professionals, and relief workers who work
                 tirelessly to support communities in distress.</p>
+<<<<<<< HEAD:src/aboutus.php
+        </td>`
+=======
         </td>
 
 
@@ -67,3 +69,4 @@
         <p>Our organization consists of dedicated volunteers, medical professionals, and relief workers who work
             tirelessly to support communities in distress.</p>
     </section> -->
+>>>>>>> c768082c1d24d5a18982bef17fac1b97aa67d2ba:src/about.php
