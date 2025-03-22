@@ -1,4 +1,8 @@
 <?php
+include_once __DIR__ . "/assets/templates/header.php";
+Navigation();
+?>
+<?php
 function getRequestMethod()
 {
     return $_SERVER['REQUEST_METHOD'];
@@ -26,19 +30,11 @@ if (getRequestMethod() == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Form - Egyptian Red Crescent</title>
-    <link rel="stylesheet" href="volunteerform.css">
+    <link rel="stylesheet" href="assets/css/volunteerform.css">
 </head>
 
 <body>
-    <header>
-        <h1>Volunteer Application Form</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="volunteer.php">Volunteer</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Volunteer Application Form</h1>
 
     <section>
         <h2>Join Us as a Volunteer</h2>
@@ -59,9 +55,10 @@ if (getRequestMethod() == "POST") {
         </form>
     </section>
 
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> Egyptian Red Crescent. All rights reserved.</p>
-    </footer>
+    <?php
+    include_once __DIR__ . "/assets/templates/footer.php";
+    Footer();
+    ?>
 </body>
 
 </html>
