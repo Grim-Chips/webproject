@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 // Define the Egyptian Red Crescent projects and programs
 $erc_programs = [
     "Disaster Management and Emergency Response" => [
@@ -57,11 +56,10 @@ foreach ($erc_programs as $category => $programs) {
     echo "</ul>";
 }
 ?>
-=======
 $projects = [
-    ["title" => "Community Health Program", "description" => "Providing free medical checkups and vaccinations."],
-    ["title" => "Youth Volunteer Initiative", "description" => "Engaging young people in humanitarian work."],
-    ["title" => "Disaster Preparedness Project", "description" => "Training communities to respond to emergencies."]
+["title" => "Community Health Program", "description" => "Providing free medical checkups and vaccinations."],
+["title" => "Youth Volunteer Initiative", "description" => "Engaging young people in humanitarian work."],
+["title" => "Disaster Preparedness Project", "description" => "Training communities to respond to emergencies."]
 ];
 ?>
 
@@ -95,4 +93,3 @@ $projects = [
 </body>
 
 </html>
->>>>>>> c768082c1d24d5a18982bef17fac1b97aa67d2ba
