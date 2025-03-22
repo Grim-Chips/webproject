@@ -64,7 +64,7 @@
         </tr>
         <tr>
             <td>
-                <h2><a href="team.php" style="color: #0086fc;">Our Team</a></h2>
+                <h2><a href="ourteam.php" style="color: #0086fc;">Our Team</a></h2>
                 <p>Meet the dedicated staff and volunteers who work tirelessly to
                     support our mission and make a difference in people's lives.</p>
             </td>

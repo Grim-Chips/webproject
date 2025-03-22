@@ -1,4 +1,4 @@
-name=John Doe
+name=Dr. Ahmed Hassan
 term=2020 - 2024
-country=Exampleland
-bio=John Doe is the current president of Exampleland. He has been serving since 2020 and is known for his dedication to economic growth and social reforms.
+country=something
+bio= 	President is the current president of red crescent. He has been serving since 1970 and is known for his dedication to economic growth and social reforms.
