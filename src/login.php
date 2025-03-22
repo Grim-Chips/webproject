@@ -1,40 +1,50 @@
 <?php
 session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'] ?? '';
-    $password = $_POST['password'] ?? '';
-    
-   
-    if (!empty($username) && !empty($password)) {
-        $_SESSION['user'] = $username;
-        header("Location: index.php");
-        exit();
+// Redirect if already logged in
+if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) {
+    if ($_SESSION["role"] === "admin") {
+        header("Location: admin.php");
     } else {
-        $error = "Invalid username or password!";
+        header("Location: dashboard.php");
     }
+    exit();
 }
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login / Sign Up</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
+
 <body>
-    <h2>Login</h2>
-    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
-    <form action="login_signup_form.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
+    <form action="admin/dologin.php" method="post">
+        <h2>Login</h2>
+
+        <?php
+        if (isset($_GET['registered']) && $_GET['registered'] == 'true') {
+            echo '<div class="message message-success">Registration successful! Please login.</div>';
+        }
+        if (isset($_GET['error']) && $_GET['error'] == 'invalid') {
+            echo '<div class="message message-error">Invalid email or password!</div>';
+        }
+        if (isset($_GET['logout']) && $_GET['logout'] == 'true') {
+            echo '<div class="message message-info">You have been logged out successfully.</div>';
+        }
+        ?>
+
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div>
+            <button type="submit" class="button">Login</button>
+        </div>
+        <p>Don't have an account? <a href="signup.php">Register here</a></p>
     </form>
-    <p>Don't have an account? <a href="signup.php">Sign up here</a>.</p>
 </body>
+
 </html>
