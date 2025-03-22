@@ -13,7 +13,7 @@ function Navigation()
                 <a href="history.php">History</a>
                 <a href="trainingcourses.php">training courses</a>
                 <a href="projects_programs.php">projects/programs</a>
-                <a href="login.php">login</a>
+                <a href="admin/login.php">login</a>
             </div>
         </nav>';
 }

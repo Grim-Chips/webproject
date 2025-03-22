@@ -3,7 +3,7 @@
 
 <head>
     <title>User Registration</title>
-    <link rel="stylesheet" href="assets/css/signup.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
