@@ -1,24 +1,90 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-.dashboard {
-    max-width: 800px;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
+        /* Dashboard container */
+        .dashboard {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Header section */
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.button {
-    background-color: #f44336;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 4px;
-}
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Logout button */
+        .button {
+            background-color: white;
+            color: #007bff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #f4f4f9;
+        }
+
+        /* Content section */
+        .content {
+            padding: 20px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* User info styling */
+        .user-info {
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+        }
+
+        .user-info strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Role badge */
+        .role-badge {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
