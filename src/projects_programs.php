@@ -56,13 +56,11 @@ foreach ($erc_programs as $category => $programs) {
     echo "</ul>";
 }
 ?>
-<php? $projects=[ ["title"=> "Community Health Program", "description" => "Providing free medical checkups and
-    vaccinations."],
+<?php $projects = [
+    ["title" => "Community Health Program", "description" => "Providing free medical checkups and vaccinations."],
     ["title" => "Youth Volunteer Initiative", "description" => "Engaging young people in humanitarian work."],
     ["title" => "Disaster Preparedness Project", "description" => "Training communities to respond to emergencies."]
-    ];
-
-    ?>
+];
 
     <!DOCTYPE html>
     <html lang="en">

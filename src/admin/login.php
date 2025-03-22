@@ -19,7 +19,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) {
 </head>
 
 <body>
-    <form action="admin/dologin.php" method="post">
+    <form action="dologin.php" method="post">
         <h2>Login</h2>
 
         <?php
