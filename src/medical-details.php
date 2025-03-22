@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Assistance Details - Egyptian Red Crescent</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/medical.css">
 </head>
 
 <body>
@@ -17,8 +17,10 @@
     <main>
         <h1>Medical Assistance</h1>
         <p>
-            Our medical teams are dedicated to providing first aid, health services, and support to vulnerable populations. 
-            Whether it's during emergencies or in everyday situations, we ensure that medical care is accessible to those in need.
+            Our medical teams are dedicated to providing first aid, health services, and support to vulnerable
+            populations.
+            Whether it's during emergencies or in everyday situations, we ensure that medical care is accessible to
+            those in need.
         </p>
         <h2>Our Services Include:</h2>
         <ul>

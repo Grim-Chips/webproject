@@ -16,13 +16,13 @@
     <table>
         <tr>
             <td>
-                <h2>Our Mission</h2>
+                <h2><a href="mission.php" style="color: #0086fc;">Our Mission</a></h2>
                 <p>Our mission is to provide humanitarian aid to those in need
                     and to promote social welfare and community development.</p>
                 <img src="assets/images/0_g1_99affee4.jpg" alt="sick_child" style="width: 300px; height: auto;">
             </td>
             <td>
-                <h2>Our Vision</h2>
+                <h2><a href="vision.php" style="color: #0086fc;">Our Vision</a></h2>
                 <p>Our vision is to create a world where everyone has access to
                     the resources and support they need to live a healthy and fulfilling life.</p>
                 <img src="assets/images/0_about-us_2ed5f5f5.jpg" alt="vision" style="width: 300px; height: auto;">
@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td>
-                <h2>Our Values</h2>
+                <h2><a href="values.php" style="color: #0086fc;">Our Values</a></h2>
                 <ul>
                     <img src="assets/images/Blog-20-image.jpg" alt="values" style="width: 300px; height: auto;">
                     <li>Compassion</li>
@@ -41,7 +41,7 @@
                 </ul>
             </td>
             <td>
-                <h2>Our Goals</h2>
+                <h2><a href="goals.php" style="color: #0086fc;">Our Goals</a></h2>
                 <ul>
                     <li>Provide emergency relief to those affected by disasters</li>
                     <li>Support vulnerable populations in need of assistance</li>
@@ -52,60 +52,60 @@
         </tr>
         <tr>
             <td>
-                <h2>Our Impact</h2>
+                <h2><a href="impact.php" style="color: #0086fc;">Our Impact</a></h2>
                 <p>Since our founding in 1864, we have helped millions of people
                     around the world by providing food, shelter, medical care, and other essential services.</p>
             </td>
             <td>
-                <h2>Get Involved</h2>
+                <h2><a href="getinvolved.php" style="color: #0086fc;">Get Involved</a></h2>
                 <p>Join us as a volunteer, make a donation, or learn more about our
                     projects and programs.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <h2>Our Team</h2>
+                <h2><a href="team.php" style="color: #0086fc;">Our Team</a></h2>
                 <p>Meet the dedicated staff and volunteers who work tirelessly to
                     support our mission and make a difference in people's lives.</p>
             </td>
             <td>
-                <h2>Contact Us</h2>
+                <h2><a href="contactus.php" style="color: #0086fc;">Contact Us</a></h2>
                 <p>Get in touch with us to learn more about our work, request assistance,
                     or find out how you can help.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <h2>News</h2>
+                <h2><a href="news.php" style="color: #0086fc;">News</a></h2>
                 <p>Read the latest news and updates from the Egyptian Red Crescent
                     and stay informed about our activities and initiatives.</p>
             </td>
             <td>
-                <h2>Events</h2>
+                <h2><a href="events.php" style="color: #0086fc;">Events</a></h2>
                 <p>Find out about upcoming events, fundraisers, and other activities
                     that you can participate in to support our cause.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <h2>Donate</h2>
+                <h2><a href="donate.php" style="color: #0086fc;">Donate</a></h2>
                 <p>Make a donation to help us provide essential services to those in need
                     and support our ongoing humanitarian efforts.</p>
             </td>
             <td>
-                <h2>Volunteer</h2>
+                <h2><a href="volunteer.php" style="color: #0086fc;">Volunteer</a></h2>
                 <p>Join us as a volunteer and make a difference in people's lives by
                     providing assistance and support to those in need.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <h2>Training</h2>
+                <h2><a href="training.php" style="color: #0086fc;">Training</a></h2>
                 <p>Learn valuable skills and gain experience by participating in our
                     training courses and workshops on disaster response, first aid, and more.</p>
             </td>
             <td>
-                <h2>Resources</h2>
+                <h2><a href="resources.php" style="color: #0086fc;">Resources</a></h2>
                 <p>Access resources and information on emergency preparedness, health and
                     safety, and other topics to help you stay informed and prepared for emergencies.</p>
             </td>
