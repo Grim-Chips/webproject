@@ -8,10 +8,10 @@ function Navigation()
             <img src="../src/assets/images/logo.jpeg" alt="logo" style="width: 300px; height: auto; margin-right: 20px;">
             <div>
                 <a href="index.php">Home</a>
-                <a href="volunteer.php">Volunteer</a>
                 <a href="about.php">About</a>
+                <a href="volunteer.php">Volunteer</a>
                 <a href="history.php">History</a>
-                <a href="trainingcourses.php">training courses</a>
+                <a href="service.php">Services</a>
                 <a href="projects_programs.php">projects/programs</a>
                 <a href="admin/login.php">login</a>
             </div>

@@ -15,7 +15,7 @@
     ?>
 
     <section id="emergency">
-        <h2>  <a href="emergency-details.php">Learn More about Emergency Response</a></h2>
+        <h2> <a href="emergency-details.php">Learn More about Emergency Response</a></h2>
         <p>We provide immediate disaster relief and emergency assistance to communities affected by crises.</p>
     </section>
 
@@ -25,7 +25,7 @@
     </section>
 
     <section id="training">
-        <h2><a href="training-details.php">Learn More about Training Programs</a></h2>
+        <h2><a href="trainingcourses.php">Learn More about Training Programs</a></h2>
         <p>We conduct first aid and disaster response training programs to equip individuals with life-saving skills.
         </p>
     </section>
