@@ -19,7 +19,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) {
 </head>
 
 <body>
-    <form action="dologin.php" method="post">
+    <form action="admin/dologin.php" method="post">
         <h2>Login</h2>
 
         <?php
@@ -43,7 +43,7 @@ if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) {
         <div>
             <button type="submit" class="button">Login</button>
         </div>
-        <p>Don't have an account? <a href="registration_form.html">Register here</a></p>
+        <p>Don't have an account? <a href="signup.php">Register here</a></p>
     </form>
 </body>
 
