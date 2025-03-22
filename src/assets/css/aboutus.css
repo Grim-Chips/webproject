@@ -48,15 +48,10 @@ body {
 /* Image styling */
 .aboutus_container img {
     width: 100%;
-    /* Make the image responsive */
     max-width: 300px;
-    /* Limit the maximum width */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 8px;
-    /* Add rounded corners for a modern look */
     margin-top: 1rem;
-    /* Add spacing above the image */
 }
 
 /* Responsive design */
