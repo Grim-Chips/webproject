@@ -14,32 +14,26 @@
     ?>
 
     <table class="aboutus_container">
-        <td>
-            <h2>Our History</h2>
-            <p>The Egyptian Red Crescent was established to provide humanitarian assistance and support during times
-                of
-                crisis. Over the years, it has grown to become one of Egypt's most trusted relief organizations.</p>
-            <img src="assets/images/coverjpg.jpg" alt="people">
-        </td>
-        <td>
-
-            <h2>Our Values</h2>
-            <p>We are committed to neutrality, humanity, impartiality, independence, and voluntary service to help
-                those in
-                need without discrimination.</p>
-        </td>
-        </td>
-
-        <h2>Our Team</h2>
-        <p>Our organization consists of dedicated volunteers, medical professionals, and relief workers who work
-            tirelessly to support communities in distress.</p>
-        </td>
-
-        </td>
-
-
-
-
+        <tr>
+            <td>
+                <h2>Our History</h2>
+                <p>The Egyptian Red Crescent was established to provide humanitarian assistance and support during times
+                    of
+                    crisis. Over the years, it has grown to become one of Egypt's most trusted relief organizations.</p>
+                <img src="assets/images/coverjpg.jpg" alt="people">
+            </td>
+            <td>
+                <h2>Our Values</h2>
+                <p>We are committed to neutrality, humanity, impartiality, independence, and voluntary service to help
+                    those in
+                    need without discrimination.</p>
+            </td>
+            <td>
+                <h2>Our Team</h2>
+                <p>Our organization consists of dedicated volunteers, medical professionals, and relief workers who work
+                    tirelessly to support communities in distress.</p>
+            </td>
+        </tr>
     </table>
 
 
