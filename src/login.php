@@ -1,28 +1,18 @@
 <?php
-session_start();
-if (isset($_SESSION['username'])) {
-    header("Location: admin.php");
-    exit();
-}
+
 ?>
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Login</title>
-</head>
-
-<body>
-    <h2>Login</h2>
-    <?php if (isset($_GET['error'])): ?>
-        <p style="color: red;">Invalid login</p>
-    <?php endif; ?>
-    <form action="auth.php" method="post">
-        Email<input type="text" name="username" required />
-        Password<input type="password" name="password" required />
-        <input type="submit" value="Login" />
-    </form>
-    <p><a href="registeration.php">Don't have an account? Register here</a></p>
-</body>
-
-</html>
+<form action="/project1/webproject/src/assets/functions/doLogin.php" method="post">
+    <table>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="Email" required /></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="Password" required /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Login" /></td>
+        </tr>
+    </table>
+</form>
