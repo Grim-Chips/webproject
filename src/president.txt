@@ -1,4 +1,0 @@
-name=Dr. Ahmed Hassan
-term=2020 - 2024
-country=something
-bio= 	President is the current president of red crescent. He has been serving since 1970 and is known for his dedication to economic growth and social reforms.
