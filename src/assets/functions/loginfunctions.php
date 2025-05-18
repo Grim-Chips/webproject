@@ -1,45 +1,31 @@
-<?
-function getLastId($fileName, $Separator)
+<?php
+include "genfunctions.php";
+$fileName = "UsersFile.txt";
+$typesFile = "UserType.txt";
+$typesMenuFile = "UserTypeMenu.txt";
+
+
+function Login($Email, $Password)
 {
-
-    if (!file_exists($fileName)) {
-        return 0;
-    }
-
-    $myfile = fopen($fileName, "r+") or die("Unable to open file!");
-    $LastId = 0;
-    while (!feof($myfile)) {
-        $line = fgets($myfile);
-        $ArrayLine = explode($Separator, $line);
-
-        if ($ArrayLine[0] != "") {
-            $LastId = $ArrayLine[0];
-        }
-
-    }
-    return $LastId;
+    global $fileName;
+    $res = searchUser($fileName, $Email . "~" . $Password);
+    return $res;
 }
 
 
-function deleteRecord($FileName, $Id)
-{
-    $myfile = fopen($FileName, "r+") or die("Unable to open file!");
-    $LastId = 0;
-    $LoadFileContent = "";
-    while (!feof($myfile)) {
-        $line = fgets($myfile);
-        $ArrayLine = explode("~", $line);
 
-        if ($ArrayLine[0] == $Id) {
-            //Skip
-        } else {
-            $LoadFileContent .= $line;
-        }
+function addUser($Email, $Password, $FullName, $DOB, $userType)
+{
+    global $fileName;
+    $id = getLastId($fileName, "~") + 1;
+    $record = $id . "~" . $Email . "~" . $Password . "~" . $FullName . "~" . $DOB . "~" . $userType;
+    if (searchUser($fileName, $Email) == false) {
+        StoreRecord($fileName, $record);
+        return true;
+    } else {
+        return false;
     }
-    fclose($myfile);
-    file_put_contents($FileName, trim($LoadFileContent));
 
 }
-
 
 ?>
