@@ -1,9 +1,8 @@
 <?php
-include "genfunctions.php";
+include_once "genfunctions.php";
 $fileName = "UsersFile.txt";
 $typesFile = "UserType.txt";
 $typesMenuFile = "UserTypeMenu.txt";
-
 
 function Login($Email, $Password)
 {
@@ -11,8 +10,6 @@ function Login($Email, $Password)
     $res = searchUser($fileName, $Email . "~" . $Password);
     return $res;
 }
-
-
 
 function addUser($Email, $Password, $FullName, $DOB, $userType)
 {
@@ -25,7 +22,5 @@ function addUser($Email, $Password, $FullName, $DOB, $userType)
     } else {
         return false;
     }
-
 }
-
 ?>
