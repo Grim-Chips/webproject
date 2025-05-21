@@ -1,7 +1,12 @@
 <?php
 
+session_start();
+if (isset($_SESSION['username'])) {
+    header("Location: admin.php");
+    exit();
+}
 ?>
-<form action="doLogin.php" method="post">
-    Email<input type="text" name="Email" />Password<input type="password" name="Password" /><input type="submit"
+<form action="loginfunctions.php" method="post">
+    Email<input type="text" name="username" />Password<input type="password" name="password" /><input type="submit"
         value="login" />
 </form>

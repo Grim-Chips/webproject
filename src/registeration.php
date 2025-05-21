@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +9,8 @@
 
 <body>
     <h2>User Registration</h2>
-    <form action="registerationfunc.php" method="post">
+    <!-- Update the path to match your file structure -->
+    <form action="src/assets/functions/registerationfunc.php" method="post">
         <table>
             <tr>
                 <td>Email</td>
@@ -42,3 +45,5 @@
         </table>
     </form>
 </body>
+
+</html>
