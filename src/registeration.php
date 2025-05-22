@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (isset($_SESSION['username'])) {
+    header("Location: admin.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,41 +14,20 @@
 
 <body>
     <h2>User Registration</h2>
-    <!-- Update the path to match your file structure -->
     <form action="src/assets/functions/registerationfunc.php" method="post">
-        <table>
-            <tr>
-                <td>Email</td>
-                <td><input type="email" name="Email" required /></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" name="Password" required /></td>
-            </tr>
-            <tr>
-                <td>Full Name</td>
-                <td><input type="text" name="FullName" required /></td>
-            </tr>
-            <tr>
-                <td>DOB</td>
-                <td><input type="date" name="DOB" required /></td>
-            </tr>
-            <tr>
-                <td><label for="userType">Choose User Type:</label></td>
-                <td>
-                    <select name="userType" id="userType">
-                        <option value="1">Admin</option>
-                        <option value="2">Teacher</option>
-                        <option value="3">Student</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Register" /></td>
-                <td><input type="reset" value="Clear" /></td>
-            </tr>
-        </table>
+        Username/Email<input type="text" name="username" required />
+        Password<input type="password" name="Password" required />
+        Full Name<input type="text" name="FullName" required />
+        DOB<input type="date" name="DOB" required />
+        User Type<select name="userType">
+            <option value="1">Admin</option>
+            <option value="2">Caregiver</option>
+            <option value="3">User</option>
+        </select>
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
     </form>
+    <p><a href="login.php">Already have an account? Login here</a></p>
 </body>
 
 </html>
