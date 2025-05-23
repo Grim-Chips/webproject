@@ -1,3 +1,0 @@
-1~TeacherId~StudentID~4~5000 EGP~ Visa Card~29-5-2022~11:40am
-2
-3
