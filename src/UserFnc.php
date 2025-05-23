@@ -24,7 +24,17 @@ function getUserById($Id)
 	global $fileName;
 	$Record = getRowById($fileName, "~", $Id);
 
+	if (!$Record) {
+		return false; // User not found
+	}
+
 	$ArrayResult = explode("~", $Record);
+
+	// Ensure the array has enough elements
+	if (count($ArrayResult) < 5) {
+		return false; // Data is incomplete or corrupted
+	}
+
 	$Result['id'] = $ArrayResult[0];
 	$Result['Email'] = $ArrayResult[1];
 	$Result['Password'] = $ArrayResult[2];

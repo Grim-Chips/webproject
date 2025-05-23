@@ -1,10 +1,4 @@
 <?php
-session_start();
-//check if user is admin
-if (!isset($_SESSION['Email'])) {
-	header("Location: login.php");
-	exit;
-}
 include "Userfnc.php";
 $id = $_REQUEST["id"];
 $Result = getUserById($id);
