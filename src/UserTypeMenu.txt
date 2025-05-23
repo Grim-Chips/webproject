@@ -1,3 +1,0 @@
-1~welcomeAdmin.php
-2~welcomeStudent.php
-3~WelcomeTeacher.php
