@@ -4,7 +4,7 @@ include "UserFnc.php";
 $pass = Encrypt($_REQUEST["Password"], 2);
 
 //addUser_Check
-if (addUser($_POST["Email"], $pass, $_REQUEST["FullName"], $_REQUEST["DOB"])) {
+if (addUser($_POST["Email"], $password, $_REQUEST["FullName"], $_REQUEST["DOB"], $_REQUEST["UserType"])) {
     echo '<script>alert("Success");</script>';
     header("Location: login.php");
 } else {

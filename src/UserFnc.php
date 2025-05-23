@@ -19,4 +19,15 @@ function Decrypt($Word, $Key)
     }
     return $Result;
 }
+function addUser($email, $password, $fullname, $dob, $usertype)
+{
+    $file = fopen("user.txt", "a");
+    if ($file) {
+        fwrite($file, "$email~$password~$fullname~$dob~$usertype");
+        fclose($file);
+        return true;
+    } else {
+        return false;
+    }
+}
 ?>
