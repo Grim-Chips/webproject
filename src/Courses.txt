@@ -1,5 +1,0 @@
-1~Breakfast~400
-2~Dinner~300
-3~Music~100
-4~Swimming~ 3
-5~Movie 4
