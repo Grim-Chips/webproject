@@ -1,15 +1,12 @@
 <?php
 include "Userfnc.php";
 
-$pass=Encrypt($_REQUEST["Password"],2);
+$pass = Encrypt($_REQUEST["Password"], 2);
 
-if (addUser($_POST["Email"],$pass,$_REQUEST["FullName"],$_REQUEST["DOB"]))
-{
+if (addUser($_POST["Email"], $pass, $_REQUEST["FullName"], $_REQUEST["DOB"])) {
 	//echo "Success";
 	header("Location: ListAllUsers.php?Msg=Record Added Sucessfully");
-}
-else
-{
+} else {
 	echo "Duplicate email";
 }
 ?>

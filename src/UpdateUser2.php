@@ -1,14 +1,12 @@
 <?php
 include "Userfnc.php";
 
-$id=$_REQUEST["id"];
-$Email=$_REQUEST["Email"];
-$Password=Encrypt($_REQUEST["Password"],2);
+$pass = Encrypt($_REQUEST["Password"], 2);
 
-$FullName=$_REQUEST["FullName"];
-$DOB=$_REQUEST["DOB"];
-UpdateUser($id,$Email,$Password,$FullName,$DOB);
-header("Location: ListAllUsers.php?Msg=Update Successfully");	
-
-
+if (addUser($_POST["Email"], $pass, $_REQUEST["FullName"], $_REQUEST["DOB"])) {
+    //echo "Success";
+    header("Location: ListAllUsers.php?Msg=Record Added Sucessfully");
+} else {
+    echo "Duplicate email";
+}
 ?>
