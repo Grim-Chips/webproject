@@ -10,7 +10,7 @@ if (Login($_POST["Email"], $pass)) {
 	$_SESSION["Email"] = $_POST["Email"];
 	echo $_SESSION["Email"];
 	echo "want to add user <br>";
-	echo "<a href='updateUser.php'>Add User</a>";
+	echo "<a href='ListAllUsers.php'>Add User</a>";
 
 } else {
 	echo "False Login";
