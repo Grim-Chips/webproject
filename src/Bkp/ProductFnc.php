@@ -1,7 +1,7 @@
 <?php
 include "Functins.php";
-$fileName="UsersFile.txt";
-function DeleteUser($id)
+$fileName="Products.txt";
+function DeleteProducts($id)
 {
 	global $fileName;
 	$r=getRowById($fileName,"~",$id);
@@ -9,61 +9,50 @@ function DeleteUser($id)
 	//exit();
 	DeleteRecord($fileName,$r);
 }
-function UpdateUser($id,$Email,$Password,$FullName,$DOB)
+function UpdateProducts($id,$ProductName,$Price)
 {
 	global $fileName;
-	$record=$id."~".$Email."~".$Password."~".$FullName."~".$DOB."\r\n";
+	$record=$id."~".$ProductName."~".$Price."\r\n";
 	$r=getRowById($fileName,"~",$id);
 	//echo $record ."NEW <br>";
 	//echo $r ."NEW <br>";
 	UpdateRecord($fileName,$record,$r);
 	
 }
-function getUserById($Id)
+function getProductsById($Id)
 {
 	global $fileName;
 	$Record=getRowById($fileName,"~",$Id);
 	
 	$ArrayResult=explode("~",$Record);
 	$Result['id']=$ArrayResult[0];
-	$Result['Email']=$ArrayResult[1];
-	$Result['Password']=$ArrayResult[2];
-	$Result['FullName']=$ArrayResult[3];
-	$Result['DOB']=$ArrayResult[4];
+	$Result['ProductName']=$ArrayResult[1];
+	$Result['Price']=$ArrayResult[2];
+
 	return $Result;
 }
-function getAllUsers()
+function getAllProductss()
 {
 	global $fileName;
 	$R=ListAll($fileName);
 	return $R;
 }
 
-function getAllUsersByKeyWord($KeyWord)
+function getAllProductssByKeyWord($KeyWord)
 {
 	global $fileName;
 	$R=SearhKeyword($fileName,$KeyWord);
 	//echo $R[0] ."Ayman";
 	return $R;
 }
-function Login ($Email,$Password)
-{
-	global $fileName;
-	if (searchUser($fileName,$Email."~".$Password))
-	{
-		return true;
-	}
-	else{
-		return false;
-	}
-}
-function addUser($Email,$Password,$FullName,$DOB)
+
+function addProducts($ProductName,$Price)
 {
 global $fileName;
 $id=getLastId($fileName,"~")+1;
-$record=$id."~".$Email."~".$Password."~".$FullName."~".$DOB;
+$record=$id."~".$ProductName."~".$Price;
 //echo $record;
-if (searchUser($fileName,$Email)==FALSE)
+if (searchProducts($fileName,$Email)==FALSE)
 {
 StoreRecord( $fileName,$record);	
 return true;

@@ -1,10 +1,19 @@
 <?php
 include "UserFnc.php";
 
-function doLogin($email, $password)
-{
-}
+$pass=Encrypt($_REQUEST["Password"],2);
 
-// Call the function with POST data
-doLogin($_POST["Email"], $_REQUEST["Password"]);
+if (Login($_POST["Email"],$pass))
+{
+	echo "Success";
+	session_start();
+	
+	$_SESSION["Email"]=$_POST["Email"];
+	echo 	$_SESSION["Email"];
+	
+}
+else
+{
+	echo "Duplicate ID";
+}
 ?>
