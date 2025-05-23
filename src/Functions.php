@@ -1,12 +1,11 @@
 <?php
-function getUserPage($userId)
-{
+function getUserPage($userId){
     $fileName = "UserTypeMenu.txt";
     $myfile = fopen($fileName, "r+") or die("Unable to open file!");
     while (!feof($myfile)) {
         $line = fgets($myfile);
-        $arr = explode("~", $line);
-        if ($arr[0] == $userId) {
+        $arr = explode("~",$line);
+        if ($arr[0]==$userId){
             return $arr[1];
         }
     }
@@ -61,7 +60,7 @@ function UpdateRecord($fileName, $Newrecord, $OldRecord)
 {
 
     $contents = file_get_contents($fileName);
-    //replace recrd with null in content
+//replace recrd with null in content
     $contents = str_replace($OldRecord, $Newrecord, $contents);
     file_put_contents($fileName, $contents);
 }
@@ -70,7 +69,7 @@ function DeleteRecord($fileName, $record)
 {
 
     $contents = file_get_contents($fileName);
-    //replace recrd with null in content
+//replace recrd with null in content
     $contents = str_replace($record . "\r\n", '', $contents);
     file_put_contents($fileName, $contents);
 }

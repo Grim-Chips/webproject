@@ -1,14 +1,14 @@
 <?php
-include "src\assets\functions\Functions.php";
+include "Functions.php";
 $fileName = "UsersFile.txt";
-$typesFile = "UserType.txt";
-$typesMenuFile = "UserTypeMenu.txt";
+$typesFile="UserType.txt";
+$typesMenuFile="UserTypeMenu.txt";
 
 
 function Login($Email, $Password)
 {
     global $fileName;
-    $res = searchUser($fileName, $Email . "~" . $Password);
+    $res=searchUser($fileName, $Email . "~" . $Password);
     return $res;
 }
 

@@ -1,10 +1,9 @@
 <?php
-include "src\assets\functions\UserFnc.php";
+include "UserFnc.php";
 
-function doLogin($email, $password)
-{
+function doLogin($email, $password) {
     $pass = Encrypt($password, 2);
-    $line = Login($email, $pass);
+    $line = Login($email, $pass); 
     if ($line) {
         session_start();
         $arr = explode("~", $line);
