@@ -1,7 +1,7 @@
 <?php
 include "UserFnc.php";
 
-$pass = Encrypt($_REQUEST["Password"], 2);
+$password = Encrypt($_REQUEST["Password"], 2);
 
 //addUser_Check
 if (addUser($_POST["Email"], $password, $_REQUEST["FullName"], $_REQUEST["DOB"], $_REQUEST["UserType"])) {
