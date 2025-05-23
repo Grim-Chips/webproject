@@ -16,6 +16,15 @@
 			<td>DOB</td>
 			<td><input type="text" name="DOB" /></td>
 		</tr>
+		<tr>
+			<td>User Type</td>
+			<td>
+				<select name="UserType">
+					<option value="Admin">Admin</option>
+					<option value="User">User</option>
+				</select>
+			</td>
+		</tr>
 
 		<tr>
 			<td><input type="submit" /></td>
