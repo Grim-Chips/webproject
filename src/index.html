@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<!-- kelanny and faris's code -->
 <html>
+
 <head>
   <title>Login Page</title>
 </head>
+
 <body>
   <h2>Admin Login</h2>
 
@@ -18,7 +21,8 @@
   </form>
 
   <script>
-    document.getElementById("loginForm").addEventListener("submit", function(e) {
+    // kelanny and faris's javascript code 
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
       e.preventDefault();
       let form = new FormData(this);
 
@@ -26,17 +30,18 @@
         method: "POST",
         body: form
       })
-      .then(function(res) {
-        return res.json();
-      })
-      .then(function(data) {
-        if(data.success) {
-          window.location.href = "dashboard.php";
-        } else {
-          document.getElementById("message").textContent = data.message;
-        }
-      });
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          if (data.success) {
+            window.location.href = "dashboard.php";
+          } else {
+            document.getElementById("message").textContent = data.message;
+          }
+        });
     });
   </script>
 </body>
+
 </html>
