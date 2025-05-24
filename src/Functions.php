@@ -1,5 +1,4 @@
 <?php
-// do all file manipulations
 function Encrypt($Word, $Key)
 {
     $Result = "";
@@ -38,7 +37,6 @@ function getRowById($fileName, $Separator, $id)
     }
 
     $myfile = fopen($fileName, "r+") or die("Unable to open file!");
-    $LastId = 0;
     while (!feof($myfile)) {
         $line = fgets($myfile);
         $ArrayLine = explode($Separator, $line);
@@ -46,8 +44,8 @@ function getRowById($fileName, $Separator, $id)
         if ($ArrayLine[0] == $id) {
             return $line;
         }
-
     }
+    fclose($myfile);
     return False;
 }
 
@@ -76,9 +74,7 @@ function UpdateRecord($fileName, $Newrecord, $OldRecord)
 {
 
     $contents = file_get_contents($fileName);
-    //replace recrd with null in content
-//$oldRecord 1~Ayman ~
-//#NewRecord 1~Mjohamed ~
+
     $contents = str_replace($OldRecord, $Newrecord, $contents);
     file_put_contents($fileName, $contents);
 }
@@ -87,7 +83,6 @@ function DeleteRecord($fileName, $record)
 {
 
     $contents = file_get_contents($fileName);
-    //replace recrd with null in content
     $contents = str_replace($record, '', $contents);
     file_put_contents($fileName, $contents);
 }
@@ -108,7 +103,7 @@ function SearhKeyword($fileName, $Search)
     while (!feof($myfile)) {
         $line = fgets($myfile);
         $i = strpos($line, $Search);
-        //
+
         if ($i >= 0 && $i != null) {
             $Result[$j] = $line;
             $j++;

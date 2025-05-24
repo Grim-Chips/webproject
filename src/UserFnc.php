@@ -25,14 +25,13 @@ function getUserById($Id)
 	$Record = getRowById($fileName, "~", $Id);
 
 	if (!$Record) {
-		return false; // User not found
+		return false;
 	}
 
 	$ArrayResult = explode("~", $Record);
 
-	// Ensure the array has enough elements
 	if (count($ArrayResult) < 5) {
-		return false; // Data is incomplete or corrupted
+		return false;
 	}
 
 	$Result['id'] = $ArrayResult[0];
@@ -53,7 +52,6 @@ function getAllUsersByKeyWord($KeyWord)
 {
 	global $fileName;
 	$R = SearhKeyword($fileName, $KeyWord);
-	//echo $R[0] ."Ayman";
 	return $R;
 }
 function Login($Email, $Password)
@@ -70,7 +68,6 @@ function addUser($Email, $Password, $FullName, $DOB)
 	global $fileName;
 	$id = getLastId($fileName, "~") + 1;
 	$record = $id . "~" . $Email . "~" . $Password . "~" . $FullName . "~" . $DOB;
-	//echo $record;
 	if (searchUser($fileName, $Email) == FALSE) {
 		StoreRecord($fileName, $record);
 		return true;
