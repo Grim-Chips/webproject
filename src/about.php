@@ -50,7 +50,7 @@
 
 
 
-<!-- <section id="history">
+<-- <section id="history">
         <h2>Our History</h2>
         <p>The Egyptian Red Crescent was established to provide humanitarian assistance and support during times of
             crisis. Over the years, it has grown to become one of Egypt's most trusted relief organizations.</p>
