@@ -1,7 +1,7 @@
 <?php
 <?php
 session_start();
-// Example admin check (customize as needed)
+
 if (!isset($_SESSION['Email']) || $_SESSION['Email'] !== 'admin@example.com') {
     header("Location: login.php");
     exit();
