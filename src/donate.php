@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $amount = $_POST['amount'] ?? '';
-    $method = $_POST['method'] ?? '';
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $amount = $_POST['amount'];
+    $method = $_POST['method'];
     
     if (!empty($name) && !empty($email) && !empty($amount) && !empty($method)) {
         echo "<p>Thank you, $name, for your donation of $$amount via $method.</p>";
