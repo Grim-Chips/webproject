@@ -17,6 +17,7 @@ function Decrypt($Word, $Key)
     }
     return $Result;
 }
+
 function ListAll($fileName)
 {
     $myfile = fopen($fileName, "r+");
