@@ -16,7 +16,7 @@ Navigation();
   Password<input type="password" name="Password" />
   <input type="submit" />
   <input type="reset" /><br>
-  donot have an account? <a href="RegisterationForm.php">Register</a>
+  donot have an account? <a href="RegisterationForm.php" style="color: blue;">Register</a>
   <br />
 </form>
 </body>

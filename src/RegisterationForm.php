@@ -1,6 +1,8 @@
 <?php
-
-?><form action="RegisterForm2.php" method="post">
+include_once("assets/templates/header.php");
+Navigation();
+?>
+<form action="RegisterForm2.php" method="post">
 <table>
 	<tr>
 		<td>Email</td>
@@ -24,3 +26,7 @@
 	</tr>
 </table>
 </form>
+<?php
+include_once("assets/templates/footer.php");
+Footer();
+?>
