@@ -1,5 +1,7 @@
 <?php
 session_start();
+include_once (__DIR__.'/assets/templates/header.php');
+Navigation();
 ?>
 <form action="ListAllUsers.php" method="post">
 	Search <input type="text" name="KeyWord" /> <input type="image" src="download.png" align="middle" />
@@ -59,3 +61,8 @@ session_start();
 		<td colspan="4" align="center"><a href="RegisterationForm.php">Add new User</a></td>
 	</tr>
 </table>
+
+<?php
+include_once (__DIR__.'/assets/templates/footer.php');
+Footer();
+?>
